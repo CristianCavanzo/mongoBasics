@@ -1,0 +1,15 @@
+use("platzi_store");
+
+db.products.updateOne(
+  {
+    _id: ObjectId("64b44df810e681297643f406"),
+  },
+  {
+    $inc: {
+      price: 3000,
+    },
+  }
+);
+
+db.products.find();
+// COn el operador set le indicamos que atributos son los que quermos cambiar

@@ -1,0 +1,16 @@
+use("platzi_store");
+
+db.products.updateOne(
+  {
+    _id: ObjectId("64b44df810e681297643f406"),
+  },
+  {
+    $set: {
+      name: "Name changed",
+      tags: [1, 2, 3, 121, , ,],
+    },
+  }
+);
+
+db.products.find();
+// COn el operador set le indicamos que atributos son los que quermos cambiar
