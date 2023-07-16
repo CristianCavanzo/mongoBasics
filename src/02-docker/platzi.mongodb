@@ -1,0 +1,5 @@
+use("platzi_store");
+
+db.productos.find({
+  name: "product 1",
+});

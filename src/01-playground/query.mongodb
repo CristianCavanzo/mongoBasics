@@ -1,0 +1,11 @@
+use("sample_training");
+
+db.zips.countDocuments({
+  state: "NY",
+});
+
+db.zips
+  .find({
+    state: "NY",
+  })
+  .count();
