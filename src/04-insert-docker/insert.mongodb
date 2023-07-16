@@ -1,11 +1,16 @@
 use("platzi_store");
 
-db.products.insertOne({
+db.product.insertOne({
   name: "Producto 1",
   price: 1000.0,
 });
 
-db.products.insertOne({
+db.product.insertOne({
   name: "Producto 2",
   price: 500.51,
 });
+
+db.product.deleteMany({
+  price: 1000.0,
+});
+db.product.find();

@@ -1,0 +1,18 @@
+use("platzi_store");
+
+db.products.insertMany([
+  {
+    name: "Producto 1",
+    price: 100.5,
+  },
+  {
+    name: "Producto 2",
+    price: 200.5,
+  },
+  {
+    name: "Producto 3",
+    price: 300.5,
+  },
+], );
+
+db.products.countDocuments();
